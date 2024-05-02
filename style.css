@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('TrueType');
+}
+
+*::before,
+*::after,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--Yellow);
+    color: var(--Black);
+}
+
+.card-wrapper {
+    width: 34.5rem;
+    background-color: var(--White);
+    border-radius: 1.4rem;
+    border: 0.2rem solid var(--Black);
+    padding: 2.2rem;
+    box-shadow: 0.7rem 0.7rem 0 var(--Black);
+    cursor: pointer;
+}
+
+.card-cover img {
+    border-radius: 0.7rem;
+    margin-bottom: 1.6rem;
+}
+
+.card-type {
+    background-color: var(--Yellow);
+    display: inline-block;
+    padding: 0.2rem 1.0rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.card-publication {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    margin: 1.2rem 0;
+    font-weight: 800;
+    transition: color 200ms ease-out; /* Adding transition to smoothen the operation  */
+}
+
+/* hover state for the h2 element */
+h2:hover {
+    color: var(--Yellow);
+}
+
+.card-description {
+    color: var(--Grey);
+    font-size: 1.5rem;
+}
+
+.author-details {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 1.8rem;
+}
+
+.author-avatar {
+    width: 3.8rem;
+}
+
+.author-name {
+    font-weight: 800;
+}
+
+
